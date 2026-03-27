@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SERVICE | PALACE HOLDINGS, INC.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .service-detail { padding: 80px 60px; }
+    .service-detail-inner { max-width: 1200px; margin: 0 auto; }
+    .service-block { margin-bottom: 100px; }
+    .service-block-header {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 40px;
+      align-items: start;
+      margin-bottom: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #eee;
+    }
+    .service-block-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 80px;
+      color: var(--gold);
+      line-height: 1;
+      font-weight: 700;
+      opacity: 0.3;
+    }
+    .service-block-tag {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      padding: 5px 14px;
+      margin-bottom: 12px;
+    }
+    .service-block-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .service-block-sub { font-size: 15px; color: #777; }
+    .service-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 48px;
+    }
+    .feature-box {
+      background: var(--gray-light);
+      padding: 32px;
+      border-top: 3px solid var(--gold);
+    }
+    .feature-box h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .feature-box ul { padding-left: 0; }
+    .feature-box ul li {
+      font-size: 14px;
+      color: #555;
+      padding: 6px 0 6px 20px;
+      position: relative;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      line-height: 1.7;
+    }
+    .feature-box ul li::before {
+      content: '―';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 12px;
+    }
+    .flow-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 28px;
+    }
+    .flow-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+    .flow-item {
+      background: var(--navy);
+      padding: 28px 20px;
+      position: relative;
+      text-align: center;
+    }
+    .flow-item:not(:last-child)::after {
+      content: '▶';
+      position: absolute;
+      right: -12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--gold);
+      font-size: 14px;
+      z-index: 1;
+    }
+    .flow-item-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .flow-item-text {
+      font-size: 13px;
+      color: rgba(255,255,255,0.9);
+      line-height: 1.6;
+    }
+    @media (max-width: 900px) {
+      .service-detail { padding: 60px 24px; }
+      .service-block-header { grid-template-columns: 1fr; gap: 16px; }
+      .service-block-num { font-size: 48px; }
+      .service-features { grid-template-columns: 1fr; }
+      .flow-list { grid-template-columns: 1fr 1fr; gap: 2px; }
+      .flow-item:not(:last-child)::after { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="header-logo">
+    <img src="assets/images/企業ロゴ_白.png" alt="PALACE HOLDINGS" onerror="this.style.display='none'">
+  </a>
+  <nav>
+    <ul>
+      <li><a href="index.html">Top</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="company.html">Company</a></li>
+      <li><a href="guideline.html">Guideline</a></li>
+      <li class="nav-contact"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <span class="page-hero-label">Service</span>
+  <h1 class="page-hero-title">サービス</h1>
+</div>
+
+<section class="service-detail">
+  <div class="service-detail-inner">
+
+    <!-- 譲渡支援 -->
+    <div class="service-block" id="sell">
+      <div class="service-block-header">
+        <div class="service-block-num">01</div>
+        <div>
+          <span class="service-block-tag">SELL SIDE</span>
+          <h2 class="service-block-title">譲渡支援</h2>
+          <p class="service-block-sub">事業・株式の譲渡をご検討のオーナー様へ</p>
+        </div>
+      </div>
+      <p style="font-size:15px;color:#555;line-height:2;margin-bottom:40px;max-width:720px;">
+        「会社を次の世代へ引き継ぎたい」「事業を手放し、次のステージへ進みたい」<br>
+        そのような想いをお持ちのオーナー様に対し、最適な譲渡先のマッチングから<br>
+        契約成立まで一貫してサポートします。
+      </p>
+      <div class="service-features">
+        <div class="feature-box">
+          <h4>サービスの特徴</h4>
+          <ul>
+            <li>完全成功報酬型（着手金・中間金不要）</li>
+            <li>無料相談・簡易株式価値算定の実施</li>
+            <li>秘密保持を徹底した安心のプロセス</li>
+            <li>オーナーの意向を最優先した相手先選定</li>
+          </ul>
+        </div>
+        <div class="feature-box">
+          <h4>主な支援内容</h4>
+          <ul>
+            <li>企業概要書・案件資料の作成</li>
+            <li>候補先へのアプローチ・マッチング</li>
+            <li>条件交渉・デューデリジェンス対応</li>
+            <li>最終契約・クロージングサポート</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p class="flow-title">支援の流れ</p>
+        <div class="flow-list">
+          <div class="flow-item">
+            <div class="flow-item-num">01</div>
+            <div class="flow-item-text">無料相談<br>ヒアリング</div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-item-num">02</div>
+            <div class="flow-item-text">NDA締結<br>資料作成</div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-item-num">03</div>
+            <div class="flow-item-text">候補先<br>アプローチ</div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-item-num">04</div>
+            <div class="flow-item-text">交渉・DD<br>クロージング</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 譲受支援 -->
+    <div class="service-block" id="buy">
+      <div class="service-block-header">
+        <div class="service-block-num">02</div>
+        <div>
+          <span class="service-block-tag">BUY SIDE</span>
+          <h2 class="service-block-title">譲受支援</h2>
+          <p class="service-block-sub">M&Aによる事業拡大をお考えの方へ</p>
+        </div>
+      </div>
+      <p style="font-size:15px;color:#555;line-height:2;margin-bottom:40px;max-width:720px;">
+        「事業拡大・多角化のためにM&Aを活用したい」「自社の成長戦略に合う譲受先を探している」<br>
+        成長戦略としてのM&Aを、戦略立案からクロージングまで一貫してサポートします。
+      </p>
+      <div class="service-features">
+        <div class="feature-box">
+          <h4>サービスの特徴</h4>
+          <ul>
+            <li>貴社の経営戦略に沿ったソーシング</li>
+            <li>受託案件のご紹介</li>
+            <li>交渉・条件整理を一貫してサポート</li>
+            <li>デューデリジェンスの徹底支援</li>
+          </ul>
+        </div>
+        <div class="feature-box">
+          <h4>主な支援内容</h4>
+          <ul>
+            <li>買収ニーズのヒアリング・戦略整理</li>
+            <li>候補案件のソーシング・紹介</li>
+            <li>トップ面談・条件交渉のサポート</li>
+            <li>最終契約・クロージングサポート</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p class="flow-title">支援の流れ</p>
+        <div class="flow-list">
+          <div class="flow-item">
+            <div class="flow-item-num">01</div>
+            <div class="flow-item-text">無料相談<br>ニーズ整理</div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-item-num">02</div>
+            <div class="flow-item-text">候補案件<br>ご紹介</div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-item-num">03</div>
+            <div class="flow-item-text">面談・<br>条件交渉</div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-item-num">04</div>
+            <div class="flow-item-text">DD・<br>クロージング</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="section-inner">
+    <span class="section-label" style="color:var(--gold);text-align:center;display:block;">Contact</span>
+    <h2 class="section-title white">まずはお気軽にご相談ください</h2>
+    <p class="section-lead white">ご相談は無料です。秘密は厳守いたします。</p>
+    <div class="cta-btns" style="margin-top:40px;">
+      <a href="contact.html" class="btn btn-gold">無料相談フォームへ</a>
+      <a href="tel:0368247739" class="btn btn-outline-white">03-6824-7739</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="assets/images/企業ロゴ_白.png" alt="PALACE HOLDINGS" style="height:90px;width:auto;">
+    </div>
+    <nav class="footer-nav">
+      <a href="service.html">Service</a>
+      <a href="company.html">Company</a>
+      <a href="guideline.html">Guideline</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+    <div class="footer-copy">© 2026 PALACE HOLDINGS, INC. All Rights Reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
