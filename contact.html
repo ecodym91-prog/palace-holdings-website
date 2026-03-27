@@ -15,6 +15,7 @@
   <a href="index.html" class="header-logo">
     <img src="assets/images/企業ロゴ_白.png" alt="PALACE HOLDINGS" onerror="this.style.display='none'">
   </a>
+  <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
   <nav>
     <ul>
       <li><a href="index.html">Top</a></li>
@@ -97,5 +98,10 @@
   </div>
 </footer>
 
+<script>
+  document.getElementById("navToggle").addEventListener("click",function(){
+    document.querySelector("nav").classList.toggle("open");
+  });
+</script>
 </body>
 </html>

@@ -534,19 +534,71 @@ footer {
 .privacy-block ul { padding-left: 20px; list-style: disc; }
 .privacy-block ul li { margin-bottom: 6px; }
 
+/* ===== HAMBURGER (PC非表示) ===== */
+.nav-toggle { display: none; }
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
-  header { padding: 0 24px; height: 64px; }
-  nav ul { gap: 20px; }
-  .hero-inner { grid-template-columns: 1fr; padding: 60px 24px; }
-  .hero-title { font-size: 32px; }
+  /* Header */
+  header { padding: 0 20px; height: 72px; }
+  .header-logo img { height: 56px; }
+
+  /* ハンバーガーメニュー */
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+    background: none;
+    border: none;
+  }
+  .nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--navy);
+    transition: all 0.3s;
+  }
+  nav {
+    position: fixed;
+    top: 72px;
+    left: 0; right: 0;
+    background: var(--white);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  nav.open { max-height: 400px; }
+  nav ul { flex-direction: column; gap: 0; }
+  nav ul li a {
+    display: block;
+    padding: 16px 24px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+  }
+  nav ul li.nav-contact a { margin: 16px 24px; display: inline-block; padding: 10px 24px; }
+
+  /* Hero */
+  .hero { padding-top: 72px; }
+  .hero-inner { grid-template-columns: 1fr; padding: 48px 24px; }
+  .hero-title { font-size: 30px; }
   .hero-image { display: none; }
-  .section { padding: 72px 24px; }
+
+  /* Sections */
+  .section { padding: 60px 24px; }
+  .section-title { font-size: 22px; }
   .service-grid, .company-grid { grid-template-columns: 1fr; }
   .strengths-grid { grid-template-columns: 1fr; }
-  .footer-inner { flex-direction: column; text-align: center; }
+
+  /* Footer */
+  .footer-inner { flex-direction: column; align-items: center; text-align: center; }
   .footer-nav { flex-wrap: wrap; justify-content: center; }
-  .contact-form-wrap { padding: 32px 24px; }
+  .contact-form-wrap { padding: 32px 20px; }
   .page-hero { padding: 120px 24px 60px; }
-  .cta-section { padding: 72px 24px; }
+  .page-hero-title { font-size: 24px; }
+  .cta-section { padding: 60px 24px; }
+  .cta-btns { flex-direction: column; align-items: center; }
 }
