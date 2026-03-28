@@ -113,10 +113,6 @@ header {
 .header-logo img {
   height: 120px;
   width: auto;
-  background-color: #ffffff;
-  padding: 4px;
-  border: none;
-  outline: none;
   display: block;
 }
 nav ul {
