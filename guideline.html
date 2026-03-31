@@ -179,6 +179,8 @@
   document.getElementById("navToggle").addEventListener("click",function(){
     document.getElementById("mobileNav").classList.toggle("open");
   });
+  var mbb=document.querySelector(".mobile-bottom-banner");
+  if(mbb){window.addEventListener("scroll",function(){mbb.classList.toggle("visible",window.scrollY>200);});}
 </script>
 </body>
 </html>

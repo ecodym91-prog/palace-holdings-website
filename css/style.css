@@ -879,6 +879,11 @@ a.contact-info-value:hover { color: var(--gold); }
     gap: 12px;
     text-decoration: none;
     box-shadow: 0 -2px 12px rgba(0,0,0,0.2);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  .mobile-bottom-banner.visible {
+    transform: translateY(0);
   }
   .mobile-bottom-banner .mbb-icon {
     font-size: 24px;
