@@ -3,274 +3,204 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SERVICE | PALACE HOLDINGS, INC.</title>
+  <title>M&Aサービス | PALACE HOLDINGS, INC.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .service-detail { padding: 80px 60px; }
-    .service-detail-inner { max-width: 1200px; margin: 0 auto; }
-    .service-block { margin-bottom: 100px; }
-    .service-block-header {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 40px;
-      align-items: start;
-      margin-bottom: 48px;
-      padding-bottom: 40px;
-      border-bottom: 1px solid #eee;
-    }
-    .service-block-num {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 80px;
-      color: var(--gold);
-      line-height: 1;
-      font-weight: 700;
-      opacity: 0.3;
-    }
-    .service-block-tag {
-      display: inline-block;
-      background: var(--navy);
-      color: var(--white);
-      font-size: 11px;
-      letter-spacing: 0.2em;
-      padding: 5px 14px;
-      margin-bottom: 12px;
-    }
-    .service-block-title {
-      font-size: 32px;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 8px;
-    }
-    .service-block-sub { font-size: 15px; color: #777; }
-    .service-features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      margin-bottom: 48px;
-    }
-    .feature-box {
-      background: var(--gray-light);
-      padding: 32px;
-      border-top: 3px solid var(--gold);
-    }
-    .feature-box h4 {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 10px;
-    }
-    .feature-box ul { padding-left: 0; }
-    .feature-box ul li {
-      font-size: 14px;
-      color: #555;
-      padding: 6px 0 6px 20px;
-      position: relative;
-      border-bottom: 1px solid rgba(0,0,0,0.05);
-      line-height: 1.7;
-    }
-    .feature-box ul li::before {
-      content: '―';
-      position: absolute;
-      left: 0;
-      color: var(--gold);
-      font-size: 12px;
-    }
-    .flow-title {
-      font-size: 17px;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 28px;
-    }
-    .flow-list {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 0;
-    }
-    .flow-item {
-      background: var(--navy);
-      padding: 28px 20px;
-      position: relative;
-      text-align: center;
-    }
-    .flow-item:not(:last-child)::after {
-      content: '▶';
-      position: absolute;
-      right: -12px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--gold);
-      font-size: 14px;
-      z-index: 1;
-    }
-    .flow-item-num {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 28px;
-      color: var(--gold);
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    .flow-item-text {
-      font-size: 13px;
-      color: rgba(255,255,255,0.9);
-      line-height: 1.6;
-    }
-    @media (max-width: 900px) {
-      .service-detail { padding: 60px 24px; }
-      .service-block-header { grid-template-columns: 1fr; gap: 16px; }
-      .service-block-num { font-size: 48px; }
-      .service-features { grid-template-columns: 1fr; }
-      .flow-list { grid-template-columns: 1fr 1fr; gap: 2px; }
-      .flow-item:not(:last-child)::after { display: none; }
-    }
-  </style>
 </head>
 <body>
 
 <header>
   <a href="index.html" class="header-logo">
-    <img src="assets/images/企業ロゴ_透過_文字ネイビー.png" alt="PALACE HOLDINGS" onerror="this.style.display='none'">
+    <img src="assets/images/企業ロゴ_透過_文字ネイビー.png" alt="PALACE HOLDINGS">
   </a>
   <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
-  <nav>
-    <ul>
-      <li><a href="index.html">Top</a></li>
-      <li><a href="service.html">Service</a></li>
-      <li><a href="flow.html">Flow</a></li>
-      <li><a href="flow.html">Flow</a>
-      <a href="company.html">Company</a></li>
-      <li><a href="guideline.html">Guideline</a></li>
-    </ul>
-  </nav>
+  <div class="header-right">
+    <div class="header-cta">
+      <div class="header-tel-block">
+        <a href="tel:0368247739" class="header-tel">03-6824-7739</a>
+        <span class="header-tel-sub">お電話でのお問い合わせはこちらから</span>
+      </div>
+      <a href="contact.html" class="header-consult-btn">Web無料相談<span class="header-consult-sub">24時間受付中</span></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="service.html">M&amp;Aサービス</a></li>
+        <li><a href="strengths.html">当社の強み・特徴</a></li>
+        <li><a href="advisor.html">アドバイザー紹介</a></li>
+        <li><a href="fee.html">料金体系</a></li>
+        <li><a href="company.html">会社概要</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
+
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="service.html">M&amp;Aサービス</a></li>
+    <li><a href="strengths.html">当社の強み・特徴</a></li>
+    <li><a href="advisor.html">アドバイザー紹介</a></li>
+    <li><a href="fee.html">料金体系</a></li>
+    <li><a href="company.html">会社概要</a></li>
+  </ul>
+  <div class="mobile-nav-cta">
+    <a href="tel:0368247739" class="mobile-nav-tel">☎ 03-6824-7739</a>
+    <a href="contact.html" class="mobile-nav-btn">Web無料相談</a>
+  </div>
+</div>
 
 <div class="page-hero">
   <span class="page-hero-label">Service</span>
-  <h1 class="page-hero-title">サービス</h1>
+  <h1 class="page-hero-title">M&Aサービス</h1>
 </div>
 
-<section class="service-detail">
-  <div class="service-detail-inner">
+<!-- サービス概要 -->
+<div class="service-intro">
+  <div class="service-intro-inner">
+    <span class="section-label">Our Services</span>
+    <h2 class="section-title" style="margin-bottom:20px;">事業承継・M&Aのすべてに、<br>一人のプロが最後まで向き合います</h2>
+    <p>当社は、中堅・中小企業の事業承継・M&Aを専門とする支援機関です。譲渡から譲受、そしてセカンドオピニオンまで、オーナー様と経営者様のあらゆるニーズに対応します。一人の担当者が最初から最後まで一貫して支援するスタイルにより、情報の断絶なく、信頼関係を大切にしながらM&Aを進めることができます。</p>
+  </div>
+</div>
 
-    <!-- 譲渡支援 -->
-    <div class="service-block" id="sell">
-      <div class="service-block-header">
-        <div class="service-block-num">01</div>
-        <div>
-          <span class="service-block-tag">SELL SIDE</span>
-          <h2 class="service-block-title">譲渡支援</h2>
-          <p class="service-block-sub">事業・株式の譲渡をご検討のオーナー様へ</p>
-        </div>
+<!-- M&Aフロー概観（横並び） -->
+<div class="flow-overview">
+  <div class="flow-overview-inner">
+    <p class="flow-overview-title">M&Aの流れ</p>
+    <div class="flow-steps">
+      <div class="flow-step">
+        <div class="flow-step-num">01</div>
+        <div class="flow-step-name">無料相談</div>
+        <div class="flow-step-sub">秘密厳守・費用ゼロ</div>
       </div>
-      <p style="font-size:15px;color:#555;line-height:2;margin-bottom:40px;max-width:720px;">
-        「会社を次の世代へ引き継ぎたい」「事業を手放し、次のステージへ進みたい」<br>
-        そのような想いをお持ちのオーナー様に対し、最適な譲渡先のマッチングから<br>
-        契約成立まで一貫してサポートします。
-      </p>
-      <div class="service-features">
-        <div class="feature-box">
-          <h4>サービスの特徴</h4>
-          <ul>
-            <li>完全成功報酬型（着手金・中間金不要）</li>
-            <li>無料相談・簡易株式価値算定の実施</li>
-            <li>秘密保持を徹底した安心のプロセス</li>
-            <li>オーナーの意向を最優先した相手先選定</li>
-          </ul>
-        </div>
-        <div class="feature-box">
-          <h4>主な支援内容</h4>
-          <ul>
-            <li>企業概要書・案件資料の作成</li>
-            <li>候補先へのアプローチ・マッチング</li>
-            <li>条件交渉・デューデリジェンス対応</li>
-            <li>最終契約・クロージングサポート</li>
-          </ul>
-        </div>
+      <div class="flow-step">
+        <div class="flow-step-num">02</div>
+        <div class="flow-step-name">NDA締結</div>
+        <div class="flow-step-sub">情報管理の徹底</div>
       </div>
-      <div>
-        <p class="flow-title">支援の流れ</p>
-        <div class="flow-list">
-          <div class="flow-item">
-            <div class="flow-item-num">01</div>
-            <div class="flow-item-text">無料相談<br>ヒアリング</div>
-          </div>
-          <div class="flow-item">
-            <div class="flow-item-num">02</div>
-            <div class="flow-item-text">NDA締結<br>資料作成</div>
-          </div>
-          <div class="flow-item">
-            <div class="flow-item-num">03</div>
-            <div class="flow-item-text">候補先<br>アプローチ</div>
-          </div>
-          <div class="flow-item">
-            <div class="flow-item-num">04</div>
-            <div class="flow-item-text">交渉・DD<br>クロージング</div>
-          </div>
-        </div>
+      <div class="flow-step">
+        <div class="flow-step-num">03</div>
+        <div class="flow-step-name">企業価値算定</div>
+        <div class="flow-step-sub">無料で実施</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">04</div>
+        <div class="flow-step-name">マッチング</div>
+        <div class="flow-step-sub">候補先へのアプローチ</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">05</div>
+        <div class="flow-step-name">トップ面談</div>
+        <div class="flow-step-sub">当社がサポート</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">06</div>
+        <div class="flow-step-name">基本合意</div>
+        <div class="flow-step-sub">条件交渉・LOI締結</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">07</div>
+        <div class="flow-step-name">デューデリ</div>
+        <div class="flow-step-sub">DD対応サポート</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-num">08</div>
+        <div class="flow-step-name">最終契約</div>
+        <div class="flow-step-sub">クロージング完了</div>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- 譲受支援 -->
-    <div class="service-block" id="buy">
-      <div class="service-block-header">
-        <div class="service-block-num">02</div>
-        <div>
-          <span class="service-block-tag">BUY SIDE</span>
-          <h2 class="service-block-title">譲受支援</h2>
-          <p class="service-block-sub">M&Aによる事業拡大をお考えの方へ</p>
-        </div>
-      </div>
-      <p style="font-size:15px;color:#555;line-height:2;margin-bottom:40px;max-width:720px;">
-        「事業拡大・多角化のためにM&Aを活用したい」「自社の成長戦略に合う譲受先を探している」<br>
-        成長戦略としてのM&Aを、戦略立案からクロージングまで一貫してサポートします。
-      </p>
-      <div class="service-features">
-        <div class="feature-box">
-          <h4>サービスの特徴</h4>
-          <ul>
-            <li>貴社の経営戦略に沿ったソーシング</li>
-            <li>受託案件のご紹介</li>
-            <li>交渉・条件整理を一貫してサポート</li>
-            <li>デューデリジェンスの徹底支援</li>
-          </ul>
-        </div>
-        <div class="feature-box">
-          <h4>主な支援内容</h4>
-          <ul>
-            <li>買収ニーズのヒアリング・戦略整理</li>
-            <li>候補案件のソーシング・紹介</li>
-            <li>トップ面談・条件交渉のサポート</li>
-            <li>最終契約・クロージングサポート</li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <p class="flow-title">支援の流れ</p>
-        <div class="flow-list">
-          <div class="flow-item">
-            <div class="flow-item-num">01</div>
-            <div class="flow-item-text">無料相談<br>ニーズ整理</div>
-          </div>
-          <div class="flow-item">
-            <div class="flow-item-num">02</div>
-            <div class="flow-item-text">候補案件<br>ご紹介</div>
-          </div>
-          <div class="flow-item">
-            <div class="flow-item-num">03</div>
-            <div class="flow-item-text">面談・<br>条件交渉</div>
-          </div>
-          <div class="flow-item">
-            <div class="flow-item-num">04</div>
-            <div class="flow-item-text">DD・<br>クロージング</div>
-          </div>
-        </div>
-      </div>
+<!-- 3サービス -->
+<section class="section" style="background:var(--white);padding-top:80px;padding-bottom:0;">
+  <div class="section-inner">
+    <div class="section-header center">
+      <span class="section-label">Service Menu</span>
+      <h2 class="section-title">サービス一覧</h2>
     </div>
-
   </div>
 </section>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 60px 80px;">
+  <div class="service-list">
+    <div class="service-item">
+      <div class="service-item-num">01</div>
+      <h3 class="service-item-title">M&Aアドバイザリーサービス<br>（譲渡・売却）</h3>
+      <p class="service-item-desc">「会社を次の世代へ引き継ぎたい」「事業を譲渡し、次のステージへ進みたい」そのような想いをお持ちのオーナー様に対し、最適な譲受先のマッチングから契約成立まで一貫してサポートします。</p>
+      <ul class="service-item-points">
+        <li>完全成功報酬型（着手金・中間金不要）</li>
+        <li>無料相談・簡易企業価値算定の実施</li>
+        <li>秘密保持を徹底した安心のプロセス</li>
+        <li>一人の担当者が最初から最後まで対応</li>
+        <li>幅広い業種・規模の成約実績</li>
+      </ul>
+    </div>
+    <div class="service-item">
+      <div class="service-item-num">02</div>
+      <h3 class="service-item-title">M&Aアドバイザリーサービス<br>（譲受・買収）</h3>
+      <p class="service-item-desc">「事業拡大・多角化のためにM&Aを活用したい」「自社の成長戦略に合う企業を探している」成長戦略としてのM&Aを、戦略立案からクロージングまで一貫してサポートします。</p>
+      <ul class="service-item-points">
+        <li>貴社の経営戦略に沿ったソーシング</li>
+        <li>受託案件のご紹介と積極的なアプローチ</li>
+        <li>交渉・条件整理を一貫してサポート</li>
+        <li>デューデリジェンスの徹底支援</li>
+        <li>クロージング後のPMI支援にも対応</li>
+      </ul>
+    </div>
+    <div class="service-item">
+      <div class="service-item-num">03</div>
+      <h3 class="service-item-title">セカンドオピニオン<br>提供サービス</h3>
+      <p class="service-item-desc">すでに他社でM&Aを進めている方・過去に不満を感じた方へ。現在の進め方・条件・アドバイザーの対応について、客観的な第三者の視点から評価・助言を行います。</p>
+      <ul class="service-item-points">
+        <li>現在の交渉条件の妥当性評価</li>
+        <li>契約内容・手数料体系の確認</li>
+        <li>リスク洗い出しと改善提案</li>
+        <li>意思決定の後押しとなるフィードバック</li>
+        <li>秘密厳守・初回相談無料</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 詳細フロー -->
+<div class="flow-section">
+  <div class="flow-section-inner">
+    <div class="section-header center">
+      <span class="section-label">Process Detail</span>
+      <h2 class="section-title">M&Aプロセスの詳細</h2>
+    </div>
+    <div class="flow-tabs">
+      <div class="flow-tab active" data-tab="sell">譲渡をご検討の方</div>
+      <div class="flow-tab" data-tab="buy">譲受をご検討の方</div>
+    </div>
+    <div class="flow-panel active" id="panel-sell">
+      <div class="flow-detail-list">
+        <div class="flow-detail-item"><div class="flow-detail-num">01</div><div class="flow-detail-title">無料相談・ヒアリング</div><div class="flow-detail-desc">譲渡の目的・時期・希望条件を丁寧にヒアリングします。相談は完全無料・秘密厳守です。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">02</div><div class="flow-detail-title">秘密保持契約（NDA）締結</div><div class="flow-detail-desc">M&Aの検討を正式に開始するにあたり、情報を厳重に保護するためNDAを締結します。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">03</div><div class="flow-detail-title">企業価値算定・アドバイザリー契約</div><div class="flow-detail-desc">財務情報をもとに簡易的な企業価値を算定し、方向性をご提案します。着手金は不要です。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">04</div><div class="flow-detail-title">企業概要書（IM）作成</div><div class="flow-detail-desc">譲受候補先へ提示する企業概要書を作成します。会社の強みを最大限引き出す構成にします。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">05</div><div class="flow-detail-title">候補先へのアプローチ</div><div class="flow-detail-desc">オーナー様の意向に沿った候補先を選定し、秘密を保持したまま慎重にアプローチします。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">06</div><div class="flow-detail-title">トップ面談</div><div class="flow-detail-desc">有力な候補先とのトップ面談を設定します。当社がファシリテートし、円滑な対話を支援します。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">07</div><div class="flow-detail-title">基本合意書（LOI）締結</div><div class="flow-detail-desc">譲渡価格・条件・スキームについて基本合意書を締結します。条件交渉は当社がサポートします。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">08</div><div class="flow-detail-title">デューデリジェンス（DD）</div><div class="flow-detail-desc">専門家による財務・法務調査に対し、資料準備・質問対応を全面的にサポートします。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">09</div><div class="flow-detail-title">最終契約・クロージング</div><div class="flow-detail-desc">最終契約書を締結し、株式・事業の引き渡しを完了します。成約後もサポートいたします。</div></div>
+      </div>
+    </div>
+    <div class="flow-panel" id="panel-buy">
+      <div class="flow-detail-list">
+        <div class="flow-detail-item"><div class="flow-detail-num">01</div><div class="flow-detail-title">無料相談・ニーズヒアリング</div><div class="flow-detail-desc">業種・規模・地域・価格帯などの希望条件を整理し、買収戦略の立案をサポートします。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">02</div><div class="flow-detail-title">アドバイザリー契約・NDA締結</div><div class="flow-detail-desc">候補案件の紹介に向けてアドバイザリー契約およびNDAを締結します。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">03</div><div class="flow-detail-title">候補案件のご紹介</div><div class="flow-detail-desc">希望条件に合致する譲渡案件をご紹介します。複数案件の並行検討も可能です。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">04</div><div class="flow-detail-title">トップ面談</div><div class="flow-detail-desc">関心を持った案件の譲渡企業オーナーとのトップ面談を設定・サポートします。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">05</div><div class="flow-detail-title">意向表明・基本合意（LOI）締結</div><div class="flow-detail-desc">譲受の意向を正式に表明し、価格・条件・スキームについて基本合意書を締結します。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">06</div><div class="flow-detail-title">デューデリジェンス（DD）</div><div class="flow-detail-desc">専門家を起用し財務・法務等を詳細調査します。DD結果をもとに再交渉も可能です。</div></div>
+        <div class="flow-detail-item"><div class="flow-detail-num">07</div><div class="flow-detail-title">最終契約・クロージング</div><div class="flow-detail-desc">最終契約書を締結し、株式・事業の引き渡しを受けます。PMI支援にも対応します。</div></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="cta-section">
   <div class="section-inner">
@@ -278,8 +208,11 @@
     <h2 class="section-title white">まずはお気軽にご相談ください</h2>
     <p class="section-lead white">ご相談は無料です。秘密は厳守いたします。</p>
     <div class="cta-btns" style="margin-top:40px;">
-      <a href="contact.html" class="btn btn-gold">無料相談フォームへ</a>
-      <a href="tel:0368247739" class="btn btn-outline-white">03-6824-7739</a>
+      <a href="contact.html" class="cta-consult-btn">Web無料相談<span class="cta-consult-sub">24時間受付中</span></a>
+      <div class="cta-tel-block">
+        <a href="tel:0368247739">☎ 03-6824-7739</a>
+        <span>お電話でのお問い合わせはこちらから</span>
+      </div>
     </div>
   </div>
 </section>
@@ -290,10 +223,13 @@
       <img src="assets/images/企業ロゴ_透過_文字白.png" alt="PALACE HOLDINGS" style="height:90px;width:auto;">
     </div>
     <nav class="footer-nav">
-      <a href="service.html">Service</a>
-      <a href="flow.html">Flow</a>
-      <a href="company.html">Company</a>
-      <a href="guideline.html">Guideline</a>
+      <a href="service.html">M&amp;Aサービス</a>
+      <a href="strengths.html">当社の強み・特徴</a>
+      <a href="advisor.html">アドバイザー紹介</a>
+      <a href="fee.html">料金体系</a>
+      <a href="company.html">会社概要</a>
+      <a href="guideline.html">中小M&amp;Aガイドライン遵守事項</a>
+      <a href="privacy.html">プライバシーポリシー</a>
     </nav>
     <div class="footer-copy">© 2026 PALACE HOLDINGS, INC. All Rights Reserved.</div>
   </div>
@@ -301,7 +237,15 @@
 
 <script>
   document.getElementById("navToggle").addEventListener("click",function(){
-    document.querySelector("nav").classList.toggle("open");
+    document.getElementById("mobileNav").classList.toggle("open");
+  });
+  document.querySelectorAll(".flow-tab").forEach(function(tab){
+    tab.addEventListener("click",function(){
+      document.querySelectorAll(".flow-tab").forEach(function(t){t.classList.remove("active");});
+      document.querySelectorAll(".flow-panel").forEach(function(p){p.classList.remove("active");});
+      tab.classList.add("active");
+      document.getElementById("panel-"+tab.dataset.tab).classList.add("active");
+    });
   });
 </script>
 </body>

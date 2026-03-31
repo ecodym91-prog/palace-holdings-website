@@ -13,20 +13,42 @@
 
 <header>
   <a href="index.html" class="header-logo">
-    <img src="assets/images/企業ロゴ_透過_文字ネイビー.png" alt="PALACE HOLDINGS" onerror="this.style.display='none'">
+    <img src="assets/images/企業ロゴ_透過_文字ネイビー.png" alt="PALACE HOLDINGS">
   </a>
   <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
-  <nav>
-    <ul>
-      <li><a href="index.html">Top</a></li>
-      <li><a href="service.html">Service</a></li>
-      <li><a href="flow.html">Flow</a></li>
-      <li><a href="flow.html">Flow</a>
-      <a href="company.html">Company</a></li>
-      <li><a href="guideline.html">Guideline</a></li>
-    </ul>
-  </nav>
+  <div class="header-right">
+    <div class="header-cta">
+      <div class="header-tel-block">
+        <a href="tel:0368247739" class="header-tel">03-6824-7739</a>
+        <span class="header-tel-sub">お電話でのお問い合わせはこちらから</span>
+      </div>
+      <a href="contact.html" class="header-consult-btn">Web無料相談<span class="header-consult-sub">24時間受付中</span></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="service.html">M&amp;Aサービス</a></li>
+        <li><a href="strengths.html">当社の強み・特徴</a></li>
+        <li><a href="advisor.html">アドバイザー紹介</a></li>
+        <li><a href="fee.html">料金体系</a></li>
+        <li><a href="company.html">会社概要</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
+
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="service.html">M&amp;Aサービス</a></li>
+    <li><a href="strengths.html">当社の強み・特徴</a></li>
+    <li><a href="advisor.html">アドバイザー紹介</a></li>
+    <li><a href="fee.html">料金体系</a></li>
+    <li><a href="company.html">会社概要</a></li>
+  </ul>
+  <div class="mobile-nav-cta">
+    <a href="tel:0368247739" class="mobile-nav-tel">☎ 03-6824-7739</a>
+    <a href="contact.html" class="mobile-nav-btn">Web無料相談</a>
+  </div>
+</div>
 
 <div class="page-hero">
   <span class="page-hero-label">Contact</span>
@@ -35,10 +57,25 @@
 
 <section class="section contact-section">
   <div class="section-inner">
-    <div class="section-header center" style="margin-bottom:48px;">
-      <p class="section-lead" style="margin:0 auto;">ご相談は無料です。秘密は厳守いたします。<br>お気軽にお問い合わせください。</p>
-    </div>
-    <div class="contact-form-wrap">
+    <div class="contact-layout">
+      <div class="contact-info">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">お気軽に<br>ご相談ください</h2>
+        <p style="font-size:14px;color:#555;line-height:2;margin-bottom:40px;">ご相談は無料です。秘密は厳守いたします。<br>どんな小さなことでもお気軽にどうぞ。</p>
+        <div class="contact-info-item">
+          <div class="contact-info-label">TEL</div>
+          <a href="tel:0368247739" class="contact-info-value">03-6824-7739</a>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-label">MAIL</div>
+          <div class="contact-info-value" style="font-size:13px;">y.nishimori@palace-holdings.co.jp</div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-label">ADDRESS</div>
+          <div class="contact-info-value" style="font-size:13px;">〒105-0001<br>東京都港区虎ノ門4-3-20<br>神谷町MTビル14F</div>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
       <form action="#" method="post">
         <div class="form-group">
           <label class="form-label">お名前<span class="required">必須</span></label>
@@ -80,6 +117,7 @@
         </div>
       </form>
     </div>
+    </div>
   </div>
 </section>
 
@@ -89,10 +127,13 @@
       <img src="assets/images/企業ロゴ_透過_文字白.png" alt="PALACE HOLDINGS" style="height:90px;width:auto;">
     </div>
     <nav class="footer-nav">
-      <a href="service.html">Service</a>
-      <a href="flow.html">Flow</a>
-      <a href="company.html">Company</a>
-      <a href="guideline.html">Guideline</a>
+      <a href="service.html">M&amp;Aサービス</a>
+      <a href="strengths.html">当社の強み・特徴</a>
+      <a href="advisor.html">アドバイザー紹介</a>
+      <a href="fee.html">料金体系</a>
+      <a href="company.html">会社概要</a>
+      <a href="guideline.html">中小M&amp;Aガイドライン遵守事項</a>
+      <a href="privacy.html">プライバシーポリシー</a>
     </nav>
     <div class="footer-copy">© 2026 PALACE HOLDINGS, INC. All Rights Reserved.</div>
   </div>
@@ -100,7 +141,7 @@
 
 <script>
   document.getElementById("navToggle").addEventListener("click",function(){
-    document.querySelector("nav").classList.toggle("open");
+    document.getElementById("mobileNav").classList.toggle("open");
   });
 </script>
 </body>
