@@ -751,6 +751,11 @@ a.contact-info-value:hover { color: var(--gold); }
 .flow-step-name { font-size: 12px; color: var(--white); font-weight: 700; line-height: 1.4; margin-bottom: 6px; }
 .flow-step-sub { font-size: 10px; color: rgba(255,255,255,0.5); line-height: 1.5; }
 
+/* ===== MOBILE BOTTOM BANNER ===== */
+.mobile-bottom-banner {
+  display: none;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   /* Header */
@@ -858,4 +863,57 @@ a.contact-info-value:hover { color: var(--gold); }
   .page-hero-title { font-size: 24px; }
   .cta-section { padding: 60px 24px; }
   .cta-btns { flex-direction: column; align-items: center; }
+
+  /* モバイル下部固定バナー */
+  .mobile-bottom-banner {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 98;
+    background: var(--navy);
+    color: var(--white);
+    padding: 12px 16px;
+    gap: 12px;
+    text-decoration: none;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.2);
+  }
+  .mobile-bottom-banner .mbb-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+  .mobile-bottom-banner .mbb-text {
+    flex: 1;
+    min-width: 0;
+  }
+  .mobile-bottom-banner .mbb-sub {
+    font-size: 10px;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .mobile-bottom-banner .mbb-main {
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+  }
+  .mobile-bottom-banner .mbb-arrow {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--white);
+  }
+
+  /* バナー分のフッター余白 */
+  footer { padding-bottom: 64px; }
 }
