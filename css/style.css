@@ -648,9 +648,10 @@ a.contact-info-value:hover { color: var(--gold); }
 /* ===== ADVISOR ===== */
 .advisor-section { background: var(--white); padding: 80px 60px; }
 .advisor-inner { max-width: 1000px; margin: 0 auto; }
-.advisor-catch { font-size: 22px; font-weight: 700; color: var(--navy); line-height: 1.6; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 2px solid var(--gold); letter-spacing: 0.02em; }
+.advisor-catch { font-size: 22px; font-weight: 700; color: var(--navy); line-height: 1.6; margin-bottom: 16px; padding-bottom: 0; border-bottom: none; letter-spacing: 0.02em; }
 .advisor-catch::before { content: '\300C'; }
 .advisor-catch::after { content: '\300D'; }
+.advisor-catch-sub { font-size: 15px; font-weight: 400; color: var(--navy); line-height: 1.8; margin-top: 0; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 2px solid var(--gold); letter-spacing: 0.02em; }
 .advisor-profile { display: grid; grid-template-columns: 200px 1fr; gap: 48px; margin-bottom: 60px; }
 .advisor-photo { width: 200px; height: 240px; flex-shrink: 0; }
 .advisor-title { font-size: 13px; color: #888; letter-spacing: 0.1em; margin-bottom: 8px; }
