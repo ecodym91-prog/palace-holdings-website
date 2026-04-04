@@ -231,25 +231,6 @@ nav ul li a:hover { color: var(--gold); }
   z-index: 1;
 }
 .hero-content {}
-.hero-eyebrow {
-  font-family: var(--font-en);
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0.4em;
-  color: var(--gold);
-  text-transform: uppercase;
-  margin-bottom: 24px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.hero-eyebrow::before {
-  content: '';
-  display: block;
-  width: 30px;
-  height: 1px;
-  background: var(--gold);
-}
 .hero-title {
   font-size: 44px;
   font-weight: 700;
@@ -340,6 +321,14 @@ nav ul li a:hover { color: var(--gold); }
 
 /* ===== STRENGTHS ===== */
 .strengths-section { background: var(--gray-light); }
+.strengths-lead { font-size: 16px; font-weight: 700; color: var(--navy); line-height: 2; margin-bottom: 16px; }
+.strengths-lead-sub { font-size: 15px; color: var(--text); line-height: 2; margin-bottom: 60px; }
+.strength-item { margin-bottom: 60px; padding-bottom: 60px; border-bottom: 1px solid #ddd; }
+.strength-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.strength-num { font-family: var(--font-en); font-size: 48px; font-weight: 700; color: var(--gold); opacity: 0.5; line-height: 1; margin-bottom: 12px; }
+.strength-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 24px; line-height: 1.5; border-left: 4px solid var(--gold); padding-left: 16px; }
+.strength-body p { font-size: 15px; color: #555; line-height: 2; margin-bottom: 16px; }
+.strength-body p:last-child { margin-bottom: 0; }
 .strengths-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
