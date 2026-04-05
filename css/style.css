@@ -20,7 +20,7 @@ body {
   font-family: var(--font-ja);
   color: var(--text);
   line-height: 1.8;
-  font-size: 17px;
+  font-size: 19px;
 }
 
 img { max-width: 100%; display: block; }
