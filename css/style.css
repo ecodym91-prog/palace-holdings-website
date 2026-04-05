@@ -20,7 +20,7 @@ body {
   font-family: var(--font-ja);
   color: var(--text);
   line-height: 1.8;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 img { max-width: 100%; display: block; }
@@ -53,7 +53,7 @@ ul { list-style: none; }
   line-height: 1.9;
   max-width: 600px;
 }
-.section-lead.white { color: rgba(255,255,255,0.85); }
+.section-lead.white { color: var(--white); }
 
 /* ===== BUTTON ===== */
 .btn {
@@ -241,7 +241,7 @@ nav ul li a:hover { color: var(--gold); }
 }
 .hero-title span { color: var(--gold); }
 .hero-desc {
-  color: rgba(255,255,255,0.75);
+  color: var(--white);
   font-size: 15px;
   line-height: 2;
   margin-bottom: 40px;
@@ -303,7 +303,7 @@ nav ul li a:hover { color: var(--gold); }
 }
 .service-card-sub {
   font-size: 13px;
-  color: rgba(255,255,255,0.6);
+  color: var(--white);
   margin-bottom: 24px;
   line-height: 1.8;
 }
@@ -325,7 +325,8 @@ nav ul li a:hover { color: var(--gold); }
 .strengths-lead-sub { font-size: 15px; color: var(--text); line-height: 2; margin-bottom: 60px; }
 .strength-item { margin-bottom: 60px; padding-bottom: 60px; border-bottom: 1px solid #ddd; }
 .strength-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-.strength-num { font-family: var(--font-en); font-size: 48px; font-weight: 700; color: var(--gold); opacity: 0.5; line-height: 1; margin-bottom: 12px; }
+.strength-num { font-family: var(--font-en); font-size: 48px; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 12px; }
+.strength-num-label { font-size: 16px; letter-spacing: 0.15em; text-transform: uppercase; margin-right: 8px; vertical-align: baseline; }
 .strength-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 24px; line-height: 1.5; border-left: 4px solid var(--gold); padding-left: 16px; }
 .strength-body p { font-size: 15px; color: #555; line-height: 2; margin-bottom: 16px; }
 .strength-body p:last-child { margin-bottom: 0; }
@@ -395,7 +396,7 @@ nav ul li a:hover { color: var(--gold); }
   padding: 100px 60px;
 }
 .cta-section .section-title { color: var(--white); }
-.cta-section .section-lead { color: rgba(255,255,255,0.75); margin: 0 auto 40px; }
+.cta-section .section-lead { color: var(--white); margin: 0 auto 40px; }
 .cta-btns { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
 .cta-consult-btn {
   background: var(--gold);
@@ -431,12 +432,12 @@ nav ul li a:hover { color: var(--gold); }
 }
 .cta-tel-block:hover { background: var(--navy-light); border-color: var(--navy-light); }
 .cta-tel-block a { font-family: var(--font-ja); font-size: 20px; color: var(--white); font-weight: 700; letter-spacing: 0.05em; display: block; }
-.cta-tel-block span { display: block; font-size: 10px; color: rgba(255,255,255,0.6); margin-top: 4px; letter-spacing: 0.03em; white-space: nowrap; }
+.cta-tel-block span { display: block; font-size: 10px; color: var(--white); margin-top: 4px; letter-spacing: 0.03em; white-space: nowrap; }
 
 /* ===== FOOTER ===== */
 footer {
   background: #111B2E;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.7);
   padding: 48px 60px;
 }
 .footer-inner {
@@ -663,12 +664,12 @@ a.contact-info-value:hover { color: var(--gold); }
 .fee-inner { max-width: 1000px; margin: 0 auto; }
 .fee-hero-box { background: var(--navy); padding: 48px; text-align: center; margin-bottom: 60px; }
 .fee-hero-box h2 { font-size: 28px; font-weight: 700; color: var(--white); margin-bottom: 12px; }
-.fee-hero-box p { color: rgba(255,255,255,0.75); font-size: 15px; }
+.fee-hero-box p { color: var(--white); font-size: 15px; }
 .fee-free-items { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 32px; }
 .fee-free-item { text-align: center; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); padding: 24px 16px; }
 .fee-free-item .icon { font-size: 24px; color: var(--gold); margin-bottom: 10px; }
 .fee-free-item .label { font-size: 15px; color: var(--white); font-weight: 700; letter-spacing: 0.05em; }
-.fee-free-item .value { font-size: 11px; color: rgba(255,255,255,0.55); margin-top: 8px; line-height: 1.5; }
+.fee-free-item .value { font-size: 11px; color: var(--white); margin-top: 8px; line-height: 1.5; }
 .fee-block { margin-bottom: 64px; }
 .fee-block-title { font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--gold); display: flex; align-items: center; gap: 12px; }
 .fee-block-title .tag { background: var(--navy); color: var(--white); font-size: 11px; letter-spacing: 0.15em; padding: 4px 12px; font-weight: 400; }
@@ -751,7 +752,7 @@ a.contact-info-value:hover { color: var(--gold); }
 }
 .flow-step-num { font-family: 'Cormorant Garamond',serif; font-size: 20px; color: var(--gold); font-weight: 700; line-height: 1; margin-bottom: 8px; }
 .flow-step-name { font-size: 12px; color: var(--white); font-weight: 700; line-height: 1.4; margin-bottom: 6px; }
-.flow-step-sub { font-size: 10px; color: rgba(255,255,255,0.5); line-height: 1.5; }
+.flow-step-sub { font-size: 10px; color: var(--white); line-height: 1.5; }
 
 /* ===== MOBILE BOTTOM BANNER ===== */
 .mobile-bottom-banner {
