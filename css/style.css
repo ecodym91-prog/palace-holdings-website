@@ -473,7 +473,7 @@ footer {
   flex-wrap: wrap;
   gap: 20px;
 }
-.footer-nav { display: flex; gap: 12px 24px; flex-wrap: wrap; max-width: 520px; }
+.footer-nav { display: flex; gap: 12px 24px; flex-wrap: wrap; max-width: 780px; }
 .footer-nav a {
   font-size: 12px;
   letter-spacing: 0.08em;
