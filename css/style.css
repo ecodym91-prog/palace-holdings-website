@@ -330,6 +330,30 @@ nav ul li a:hover { color: var(--gold); }
 .strength-title { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 24px; line-height: 1.5; border-left: 4px solid var(--gold); padding-left: 16px; }
 .strength-body p { font-size: 15px; color: #555; line-height: 2; margin-bottom: 16px; }
 .strength-body p:last-child { margin-bottom: 0; }
+.strengths-box {
+  background: var(--white);
+  border-top: 3px solid var(--gold);
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.strengths-box-item {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  line-height: 1.6;
+}
+.strengths-box-item:last-of-type { border-bottom: none; }
+.strengths-box-num {
+  font-family: var(--font-en);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--gold);
+  margin-right: 16px;
+  vertical-align: middle;
+}
 .strengths-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
