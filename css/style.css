@@ -631,6 +631,11 @@ a.contact-info-value:hover { color: var(--gold); }
 .mobile-nav { display: none; }
 
 /* ===== HERO CONTACT FORM ===== */
+.hero-image {
+  align-self: center;
+  overflow: hidden;
+  border-radius: 4px;
+}
 .hero-form {
   background: rgba(255,255,255,0.97);
   padding: 36px 32px;
@@ -857,6 +862,7 @@ a.contact-info-value:hover { color: var(--gold); }
   .hero-inner { grid-template-columns: 1fr; padding: 48px 24px; }
   .hero-title { font-size: 30px; }
   .hero-form { display: none; } /* モバイルでは非表示 */
+  .hero-image { margin-top: 24px; }
 
   /* Sections */
   .section { padding: 60px 24px; }
