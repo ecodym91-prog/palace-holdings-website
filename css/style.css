@@ -219,12 +219,12 @@ nav ul li a:hover { color: var(--gold); }
   opacity: 0.4;
 }
 .hero-inner {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 80px 60px;
+  padding: 60px 40px;
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 60px;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
   align-items: center;
   width: 100%;
   position: relative;
@@ -232,7 +232,7 @@ nav ul li a:hover { color: var(--gold); }
 }
 .hero-content {}
 .hero-title {
-  font-size: 44px;
+  font-size: 48px;
   font-weight: 700;
   color: var(--white);
   line-height: 1.4;
