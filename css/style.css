@@ -60,6 +60,7 @@ ul { list-style: none; }
   display: inline-block;
   padding: 14px 40px;
   font-size: 14px;
+  font-weight: 700;
   letter-spacing: 0.1em;
   border: 1px solid transparent;
   cursor: pointer;
@@ -315,6 +316,7 @@ nav ul li a:hover { color: var(--gold); }
   gap: 8px;
   color: var(--gold);
   font-size: 13px;
+  font-weight: 700;
   letter-spacing: 0.1em;
   transition: gap 0.2s;
 }
