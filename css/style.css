@@ -899,6 +899,9 @@ a.contact-info-value:hover { color: var(--gold); }
   /* Footer */
   .footer-inner { flex-direction: column; align-items: center; text-align: center; }
   .footer-nav { flex-wrap: wrap; justify-content: center; }
+  .footer-nav-main a { display: block; width: 100%; text-align: center; }
+  .footer-nav-main .footer-nav-inline { display: flex; justify-content: center; gap: 28px; width: 100%; }
+  .footer-copy { font-size: 11px; white-space: nowrap; }
   .contact-layout { grid-template-columns: 1fr; gap: 40px; }
   .contact-form-wrap { padding: 32px 20px; }
   .page-hero { padding: 110px 24px 60px; }
