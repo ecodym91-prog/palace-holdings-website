@@ -355,7 +355,7 @@ nav ul li a:hover { color: var(--gold); }
 .strengths-lead { font-size: 20px; font-weight: 700; color: var(--navy); line-height: 2; margin-bottom: 16px; }
 .strengths-lead-sub { font-size: 18px; color: var(--text); line-height: 2; margin-bottom: 60px; }
 .strength-item { margin-bottom: 60px; padding-bottom: 60px; border-bottom: 1px solid #ddd; }
-.strength-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.strength-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 60px; }
 .strength-num { font-family: var(--font-en); font-size: 48px; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 12px; }
 .strength-num-label { font-size: 18px; letter-spacing: 0.15em; text-transform: uppercase; margin-right: 8px; vertical-align: baseline; }
 .strength-title { font-size: 26px; font-weight: 700; color: var(--navy); margin-bottom: 24px; line-height: 1.5; border-left: 4px solid var(--gold); padding-left: 16px; }
@@ -494,9 +494,11 @@ nav ul li a:hover { color: var(--gold); }
   min-width: 280px;
   transition: all 0.3s;
   cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
 }
 .cta-tel-block:hover { background: var(--navy-light); border-color: var(--navy-light); }
-.cta-tel-block a { font-family: var(--font-ja); font-size: 22px; color: var(--white); font-weight: 700; letter-spacing: 0.05em; display: block; }
+.cta-tel-num { font-family: var(--font-ja); font-size: 22px; color: var(--white); font-weight: 700; letter-spacing: 0.05em; display: block; }
 .cta-tel-block span { display: block; font-size: 13px; color: var(--white); margin-top: 4px; letter-spacing: 0.03em; white-space: nowrap; }
 
 /* ===== FOOTER ===== */
