@@ -883,15 +883,14 @@ a.contact-info-value:hover { color: var(--gold); }
   .service-item { padding: 32px 24px; }
   .flow-section { padding: 60px 24px; }
   .flow-overview { overflow-x: hidden; padding: 32px 0; }
-  .flow-overview-inner { padding: 0 20px; }
-  .flow-steps { min-width: 0; flex-direction: column; gap: 0; }
-  .flow-step { flex: none; width: 100%; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 16px; padding: 14px 20px; text-align: left; }
+  .flow-overview-inner { padding: 0 16px; }
+  .flow-steps { min-width: 0 !important; display: grid !important; grid-template-columns: 1fr 1fr; gap: 0; }
+  .flow-step { width: auto; border: 1px solid rgba(255,255,255,0.1); padding: 14px 12px; text-align: center; }
+  .flow-step:first-child { grid-column: 1 / -1; }
   .flow-step:not(:last-child)::after { display: none; }
-  .flow-step .flow-step-num { margin-bottom: 0; flex-shrink: 0; }
-  .flow-step .flow-step-name { margin-bottom: 0; white-space: normal; }
+  .flow-step .flow-step-name { white-space: normal; }
   .flow-step .flow-step-sub { white-space: normal; }
-  .flow-tabs { flex-direction: column; gap: 0; }
-  .flow-tab { white-space: nowrap; text-align: center; }
+  .flow-tab { white-space: normal; text-align: center; padding: 12px 16px; font-size: 14px; flex: 1; }
   .flow-detail-list { grid-template-columns: 1fr; }
   .service-intro { padding: 40px 24px; }
   .advisor-section { padding: 60px 24px; }
