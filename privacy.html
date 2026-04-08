@@ -56,7 +56,7 @@
 
 <section class="section privacy-section">
   <div class="section-inner">
-    <div class="privacy-content">
+    <div class="privacy-content fade-in">
 
       <div class="privacy-block">
         <p>株式会社パレスホールディングス（以下「当社」）は、お客様の個人情報の保護を重要な責務と認識し、以下のとおりプライバシーポリシーを定めます。</p>
@@ -155,6 +155,15 @@
   });
   var mbb=document.querySelector(".mobile-bottom-banner");
   if(mbb){window.addEventListener("scroll",function(){mbb.classList.toggle("visible",window.scrollY>200);});}
+
+  // Scroll fade-in
+  var fadeEls=document.querySelectorAll(".fade-in");
+  if(fadeEls.length){
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("visible");obs.unobserve(e.target);}});
+    },{threshold:0.15});
+    fadeEls.forEach(function(el){obs.observe(el);});
+  }
 </script>
 </body>
 </html>

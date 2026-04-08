@@ -57,10 +57,10 @@
 <section class="advisor-section">
   <div class="advisor-inner">
 
-    <p class="advisor-catch">一人のプロフェッショナルが最後まで。理想の譲渡先をお繋ぎするM&amp;Aを実現します。</p>
-    <p class="advisor-catch-sub">― 累計2,300億円超の支援実績を礎に、代表が専任のパートナーとして、貴社を託すその瞬間まで責任を持って伴走いたします ―</p>
+    <p class="advisor-catch fade-in">一人のプロフェッショナルが最後まで。理想の譲渡先をお繋ぎするM&amp;Aを実現します。</p>
+    <p class="advisor-catch-sub fade-in">― 累計2,300億円超の支援実績を礎に、代表が専任のパートナーとして、貴社を託すその瞬間まで責任を持って伴走いたします ―</p>
 
-    <div class="advisor-profile">
+    <div class="advisor-profile fade-in">
       <div class="advisor-photo" style="background:none;border:none;">
         <img src="assets/images/CEOイメージ_v2.jpg" alt="西森 裕起" style="width:200px;height:240px;object-fit:cover;display:block;">
       </div>
@@ -78,7 +78,7 @@
       </div>
     </div>
 
-    <div class="advisor-career">
+    <div class="advisor-career fade-in">
       <h3 class="advisor-career-title">経歴・実績</h3>
       <p>大学卒業後、野村證券株式会社での中堅・中小企業向けの法人営業に従事。</p>
       <p>その後、SMBC日興証券株式会社および大手監査法人系アドバイザリーファームの株式会社KPMG FAS等において、一貫してM&Aアドバイザリー業務に携わる。国内中堅・中小企業から上場企業、さらには再生案件や事業承継案件まで、多種多様なディールを数多く支援。</p>
@@ -111,10 +111,10 @@
 
 <section class="cta-section">
   <div class="section-inner">
-    <span class="section-label" style="color:var(--gold);text-align:center;display:block;">Contact</span>
-    <h2 class="section-title white">まずはお気軽にご相談ください</h2>
-    <p class="section-lead white">ご相談は無料にて承っております。<br>機密情報は厳格に管理し、外部に漏洩することは一切ございません。</p>
-    <div class="cta-btns" style="margin-top:40px;">
+    <span class="section-label fade-in" style="color:var(--gold);text-align:center;display:block;">Contact</span>
+    <h2 class="section-title white fade-in">まずはお気軽にご相談ください</h2>
+    <p class="section-lead white fade-in">ご相談は無料にて承っております。<br>機密情報は厳格に管理し、外部に漏洩することは一切ございません。</p>
+    <div class="cta-btns fade-in" style="margin-top:40px;">
       <div class="cta-tel-block">
         <a href="tel:0368247739">☎ 03-6824-7739</a>
         <span>お電話でのお問い合わせはこちらから</span>
@@ -162,6 +162,15 @@
   });
   var mbb=document.querySelector(".mobile-bottom-banner");
   if(mbb){window.addEventListener("scroll",function(){mbb.classList.toggle("visible",window.scrollY>200);});}
+
+  // Scroll fade-in
+  var fadeEls=document.querySelectorAll(".fade-in");
+  if(fadeEls.length){
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("visible");obs.unobserve(e.target);}});
+    },{threshold:0.15});
+    fadeEls.forEach(function(el){obs.observe(el);});
+  }
 </script>
 </body>
 </html>

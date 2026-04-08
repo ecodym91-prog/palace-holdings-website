@@ -73,11 +73,11 @@
 <!-- STRENGTHS -->
 <section class="section strengths-section">
   <div class="section-inner">
-    <div class="section-header center">
+    <div class="section-header center fade-in">
       <span class="section-label">Why Choose Us</span>
       <h2 class="section-title">パレスホールディングスが<br>選ばれる理由</h2>
     </div>
-    <div class="strengths-box">
+    <div class="strengths-box fade-in fade-in-delay-1">
       <div class="strengths-box-item"><span class="strengths-box-num">01</span>業界屈指のアドバイザーによる、完全専任の一気通貫支援</div>
       <div class="strengths-box-item"><span class="strengths-box-num">02</span>買手視点と1万社超ネットワークによる戦略的マッチング</div>
       <div class="strengths-box-item"><span class="strengths-box-num">03</span>完全成功報酬による成果責任型の支援</div>
@@ -89,19 +89,19 @@
 <!-- SERVICE -->
 <section class="section service-section">
   <div class="section-inner">
-    <div class="section-header center">
+    <div class="section-header center fade-in">
       <span class="section-label">Service</span>
       <h2 class="section-title">事業承継・M&Aの<br>あらゆるニーズにお応えします</h2>
     </div>
     <div class="service-grid">
-      <div class="service-card">
+      <div class="service-card fade-in">
         <div class="service-card-num">01</div>
         <span class="service-card-tag">SELL SIDE</span>
         <h3 class="service-card-title">譲渡支援</h3>
         <p class="service-card-sub">事業・株式の譲渡をご検討の方へ。<br>最適な譲渡先のマッチングから契約成立まで一貫サポート。</p>
         <a href="service.html#sell" class="service-card-link">詳しく見る</a>
       </div>
-      <div class="service-card">
+      <div class="service-card fade-in fade-in-delay-1">
         <div class="service-card-num">02</div>
         <span class="service-card-tag">BUY SIDE</span>
         <h3 class="service-card-title">譲受支援</h3>
@@ -116,7 +116,7 @@
 <section class="section company-section">
   <div class="section-inner">
     <div class="company-grid-top">
-      <div>
+      <div class="fade-in">
         <span class="section-label">Company</span>
         <h2 class="section-title" style="margin-bottom:32px;">会社概要</h2>
         <table class="company-table">
@@ -137,7 +137,7 @@
           <a href="company.html" class="btn btn-outline-navy">会社概要を詳しく見る</a>
         </div>
       </div>
-      <div>
+      <div class="fade-in fade-in-delay-1">
         <span class="section-label">Access</span>
         <h2 class="section-title" style="margin-bottom:32px;">アクセス</h2>
         <p style="font-size:13px;color:#555;margin-bottom:12px;">〒105-0001　東京都港区虎ノ門4-3-20　神谷町MTビル14F<br>東京メトロ日比谷線「神谷町駅」4b出口より徒歩1分</p>
@@ -145,7 +145,7 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.54827417036!2d139.74195147710373!3d35.66349963094568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b0036cb3ebf%3A0x29ab6bb81b6a5f85!2z44ix44OR44Os44K544Ob44O844Or44OH44Kj44Oz44Kw44K5!5e0!3m2!1sja!2sjp!4v1775643351491!5m2!1sja!2sjp" width="100%" height="280" style="border:0;display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-      <div style="padding-top:100px;">
+      <div class="fade-in fade-in-delay-2" style="padding-top:100px;">
         <img src="assets/images/ビル画像.jpg" alt="神谷町MTビル" style="width:80%;display:block;margin:0 auto;">
         <p style="font-size:12px;color:#888;margin-top:8px;text-align:center;">神谷町MTビル外観</p>
       </div>
@@ -156,9 +156,9 @@
 <!-- CTA -->
 <section class="cta-section">
   <div class="section-inner">
-    <span class="section-label" style="color:var(--gold);text-align:center;display:block;">Contact</span>
-    <h2 class="section-title white">まずはお気軽にご相談ください</h2>
-    <p class="section-lead white">ご相談は無料にて承っております。<br>機密情報は厳格に管理し、外部に漏洩することは一切ございません。</p>
+    <span class="section-label fade-in" style="color:var(--gold);text-align:center;display:block;">Contact</span>
+    <h2 class="section-title white fade-in">まずはお気軽にご相談ください</h2>
+    <p class="section-lead white fade-in fade-in-delay-1">ご相談は無料にて承っております。<br>機密情報は厳格に管理し、外部に漏洩することは一切ございません。</p>
     <div class="cta-btns" style="margin-top:40px;">
       <div class="cta-tel-block">
         <a href="tel:0368247739">☎ 03-6824-7739</a>
@@ -207,6 +207,15 @@
   });
   var mbb=document.querySelector(".mobile-bottom-banner");
   if(mbb){window.addEventListener("scroll",function(){mbb.classList.toggle("visible",window.scrollY>200);});}
+
+  // Scroll fade-in
+  var fadeEls=document.querySelectorAll(".fade-in");
+  if(fadeEls.length){
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("visible");obs.unobserve(e.target);}});
+    },{threshold:0.15});
+    fadeEls.forEach(function(el){obs.observe(el);});
+  }
 </script>
 </body>
 </html>

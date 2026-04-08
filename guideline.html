@@ -57,12 +57,12 @@
 <section class="section guideline-section">
   <div class="section-inner" style="max-width:860px;">
 
-    <div class="guideline-intro">
+    <div class="guideline-intro fade-in">
       株式会社パレスホールディングスは、国が創設したM&A支援機関登録制度の登録を受けている支援機関として、中小企業庁が定めた「中小M&Aガイドライン（第3版）」の趣旨に賛同し、その内容を遵守することを宣言いたします。<br><br>
       当社は以下の事項を誠実に実施することを誓約します。
     </div>
 
-    <div class="guideline-block">
+    <div class="guideline-block fade-in">
       <h2 class="guideline-block-title">支援の質の確保・向上に向けた取組</h2>
       <ul class="guideline-list">
         <li data-num="1">善管注意義務を履行し、依頼者の最善の利益を追求した業務を実施する。</li>
@@ -74,7 +74,7 @@
       </ul>
     </div>
 
-    <div class="guideline-block">
+    <div class="guideline-block fade-in">
       <h2 class="guideline-block-title">M&Aプロセスにおける具体的な行動指針</h2>
       <ul class="guideline-list">
         <li data-num="7">M&Aの検討段階から成約・クロージングまでの各段階において、依頼者に対して適切な情報提供・説明を行う。</li>
@@ -91,7 +91,7 @@
       </ul>
     </div>
 
-    <div class="guideline-block">
+    <div class="guideline-block fade-in">
       <h2 class="guideline-block-title">不適切な譲り受け側の排除に向けた取組</h2>
       <ul class="guideline-list">
         <li data-num="18">譲り受け側の選定にあたっては、反社会的勢力やその関係者でないことを確認する。</li>
@@ -102,7 +102,7 @@
       </ul>
     </div>
 
-    <div class="guideline-block">
+    <div class="guideline-block fade-in">
       <h2 class="guideline-block-title">仲介契約・FA契約の契約条項に関する留意点</h2>
       <ul class="guideline-list">
         <li data-num="23">専任条項を設ける場合、その期間は最長1年以内とする。</li>
@@ -112,7 +112,7 @@
       </ul>
     </div>
 
-    <div class="guideline-block">
+    <div class="guideline-block fade-in">
       <h2 class="guideline-block-title">仲介者における利益相反のリスクと現実的な対応策</h2>
       <ul class="guideline-list">
         <li data-num="27">仲介業務において生じ得る利益相反のリスクを正確に認識し、依頼者に対して事前に説明する。</li>
@@ -124,7 +124,7 @@
       </ul>
     </div>
 
-    <div class="guideline-block">
+    <div class="guideline-block fade-in">
       <h2 class="guideline-block-title">その他（M&A支援機関として取り組む事項）</h2>
       <ul class="guideline-list">
         <li data-num="33">M&A支援機関登録制度に基づく義務・規律を遵守する。</li>
@@ -186,6 +186,15 @@
   });
   var mbb=document.querySelector(".mobile-bottom-banner");
   if(mbb){window.addEventListener("scroll",function(){mbb.classList.toggle("visible",window.scrollY>200);});}
+
+  // Scroll fade-in
+  var fadeEls=document.querySelectorAll(".fade-in");
+  if(fadeEls.length){
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("visible");obs.unobserve(e.target);}});
+    },{threshold:0.15});
+    fadeEls.forEach(function(el){obs.observe(el);});
+  }
 </script>
 </body>
 </html>

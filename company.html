@@ -56,7 +56,7 @@
 
 <section class="section company-section">
   <div class="section-inner">
-    <div class="company-grid">
+    <div class="company-grid fade-in">
       <div>
         <span class="section-label">Company Profile</span>
         <h2 class="section-title" style="margin-bottom:40px;">会社概要</h2>
@@ -103,7 +103,7 @@
   </div>
 </section>
 
-<section class="section" style="background:var(--gray-light);padding:60px;">
+<section class="section fade-in" style="background:var(--gray-light);padding:60px;">
   <div class="section-inner">
     <span class="section-label">Access</span>
     <h2 class="section-title">アクセス</h2>
@@ -116,10 +116,10 @@
 
 <section class="cta-section">
   <div class="section-inner">
-    <span class="section-label" style="color:var(--gold);text-align:center;display:block;">Contact</span>
-    <h2 class="section-title white">まずはお気軽にご相談ください</h2>
-    <p class="section-lead white">ご相談は無料にて承っております。<br>機密情報は厳格に管理し、外部に漏洩することは一切ございません。</p>
-    <div class="cta-btns" style="margin-top:40px;">
+    <span class="section-label fade-in" style="color:var(--gold);text-align:center;display:block;">Contact</span>
+    <h2 class="section-title white fade-in">まずはお気軽にご相談ください</h2>
+    <p class="section-lead white fade-in">ご相談は無料にて承っております。<br>機密情報は厳格に管理し、外部に漏洩することは一切ございません。</p>
+    <div class="cta-btns fade-in" style="margin-top:40px;">
       <div class="cta-tel-block">
         <a href="tel:0368247739">☎ 03-6824-7739</a>
         <span>お電話でのお問い合わせはこちらから</span>
@@ -167,6 +167,15 @@
   });
   var mbb=document.querySelector(".mobile-bottom-banner");
   if(mbb){window.addEventListener("scroll",function(){mbb.classList.toggle("visible",window.scrollY>200);});}
+
+  // Scroll fade-in
+  var fadeEls=document.querySelectorAll(".fade-in");
+  if(fadeEls.length){
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("visible");obs.unobserve(e.target);}});
+    },{threshold:0.15});
+    fadeEls.forEach(function(el){obs.observe(el);});
+  }
 </script>
 </body>
 </html>

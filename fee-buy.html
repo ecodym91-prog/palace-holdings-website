@@ -57,7 +57,7 @@
 <section class="fee-section">
   <div class="fee-inner">
 
-    <div class="fee-block">
+    <div class="fee-block fade-in">
       <h3 class="fee-block-title"><span class="tag" style="background:var(--gold);">BUY SIDE</span>譲受企業様の料金体系</h3>
       <table class="fee-table">
         <tr>
@@ -133,10 +133,10 @@
 
 <section class="cta-section">
   <div class="section-inner">
-    <span class="section-label" style="color:var(--gold);text-align:center;display:block;">Contact</span>
-    <h2 class="section-title white">まずはお気軽にご相談ください</h2>
-    <p class="section-lead white">ご相談は無料にて承っております。<br>機密情報は厳格に管理し、外部に漏洩することは一切ございません。</p>
-    <div class="cta-btns" style="margin-top:40px;">
+    <span class="section-label fade-in" style="color:var(--gold);text-align:center;display:block;">Contact</span>
+    <h2 class="section-title white fade-in">まずはお気軽にご相談ください</h2>
+    <p class="section-lead white fade-in">ご相談は無料にて承っております。<br>機密情報は厳格に管理し、外部に漏洩することは一切ございません。</p>
+    <div class="cta-btns fade-in" style="margin-top:40px;">
       <div class="cta-tel-block">
         <a href="tel:0368247739">☎ 03-6824-7739</a>
         <span>お電話でのお問い合わせはこちらから</span>
@@ -184,6 +184,15 @@
   });
   var mbb=document.querySelector(".mobile-bottom-banner");
   if(mbb){window.addEventListener("scroll",function(){mbb.classList.toggle("visible",window.scrollY>200);});}
+
+  // Scroll fade-in
+  var fadeEls=document.querySelectorAll(".fade-in");
+  if(fadeEls.length){
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("visible");obs.unobserve(e.target);}});
+    },{threshold:0.15});
+    fadeEls.forEach(function(el){obs.observe(el);});
+  }
 </script>
 </body>
 </html>

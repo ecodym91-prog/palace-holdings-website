@@ -57,10 +57,10 @@
 <section class="section" style="background:var(--white);">
   <div class="section-inner" style="max-width:900px;">
 
-    <p class="strengths-lead">パレスホールディングスは数多くのM&amp;Aをご支援してまいりました。</p>
-    <p class="strengths-lead-sub">M&amp;Aは、<strong>誰に任せるか</strong>で結果が大きく変わります。<br>その中で、なぜ当社が選ばれているのか。私たちが提供する3つの価値をご説明します。</p>
+    <p class="strengths-lead fade-in">パレスホールディングスは数多くのM&amp;Aをご支援してまいりました。</p>
+    <p class="strengths-lead-sub fade-in">M&amp;Aは、<strong>誰に任せるか</strong>で結果が大きく変わります。<br>その中で、なぜ当社が選ばれているのか。私たちが提供する3つの価値をご説明します。</p>
 
-    <div class="strength-item">
+    <div class="strength-item fade-in">
       <div class="strength-num"><span class="strength-num-label">Reason</span>01</div>
       <h3 class="strength-title">業界屈指のアドバイザーによる、完全専任の一気通貫支援</h3>
       <div class="strength-body">
@@ -70,7 +70,7 @@
       </div>
     </div>
 
-    <div class="strength-item">
+    <div class="strength-item fade-in">
       <div class="strength-num"><span class="strength-num-label">Reason</span>02</div>
       <h3 class="strength-title">買手視点と1万社超ネットワークによる戦略的マッチング</h3>
       <div class="strength-body">
@@ -80,7 +80,7 @@
       </div>
     </div>
 
-    <div class="strength-item">
+    <div class="strength-item fade-in">
       <div class="strength-num"><span class="strength-num-label">Reason</span>03</div>
       <h3 class="strength-title">完全成功報酬による成果責任型の支援</h3>
       <div class="strength-body">
@@ -95,10 +95,10 @@
 
 <section class="cta-section">
   <div class="section-inner">
-    <span class="section-label" style="color:var(--gold);text-align:center;display:block;">Contact</span>
-    <h2 class="section-title white">まずはお気軽にご相談ください</h2>
-    <p class="section-lead white">ご相談は無料にて承っております。<br>機密情報は厳格に管理し、外部に漏洩することは一切ございません。</p>
-    <div class="cta-btns" style="margin-top:40px;">
+    <span class="section-label fade-in" style="color:var(--gold);text-align:center;display:block;">Contact</span>
+    <h2 class="section-title white fade-in">まずはお気軽にご相談ください</h2>
+    <p class="section-lead white fade-in">ご相談は無料にて承っております。<br>機密情報は厳格に管理し、外部に漏洩することは一切ございません。</p>
+    <div class="cta-btns fade-in" style="margin-top:40px;">
       <div class="cta-tel-block">
         <a href="tel:0368247739">☎ 03-6824-7739</a>
         <span>お電話でのお問い合わせはこちらから</span>
@@ -146,6 +146,15 @@
   });
   var mbb=document.querySelector(".mobile-bottom-banner");
   if(mbb){window.addEventListener("scroll",function(){mbb.classList.toggle("visible",window.scrollY>200);});}
+
+  // Scroll fade-in
+  var fadeEls=document.querySelectorAll(".fade-in");
+  if(fadeEls.length){
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("visible");obs.unobserve(e.target);}});
+    },{threshold:0.15});
+    fadeEls.forEach(function(el){obs.observe(el);});
+  }
 </script>
 </body>
 </html>

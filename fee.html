@@ -57,7 +57,7 @@
 <section class="fee-section">
   <div class="fee-inner">
 
-    <div class="fee-hero-box">
+    <div class="fee-hero-box fade-in">
       <h2>着手金・中間金<br>完全無料<br>完全成功報酬型</h2>
       <p>M&Aが成立するまで、一切の費用は発生しません。<br>成約時のみ、成功報酬をいただく仕組みです。</p>
       <div class="fee-free-items">
@@ -84,7 +84,7 @@
       </div>
     </div>
 
-    <div class="fee-block">
+    <div class="fee-block fade-in">
       <h3 class="fee-block-title"><span class="tag">SELL SIDE</span>譲渡企業様の料金体系</h3>
       <table class="fee-table">
         <tr>
@@ -157,10 +157,10 @@
 
 <section class="cta-section">
   <div class="section-inner">
-    <span class="section-label" style="color:var(--gold);text-align:center;display:block;">Contact</span>
-    <h2 class="section-title white">まずはお気軽にご相談ください</h2>
-    <p class="section-lead white">ご相談は無料にて承っております。<br>機密情報は厳格に管理し、外部に漏洩することは一切ございません。</p>
-    <div class="cta-btns" style="margin-top:40px;">
+    <span class="section-label fade-in" style="color:var(--gold);text-align:center;display:block;">Contact</span>
+    <h2 class="section-title white fade-in">まずはお気軽にご相談ください</h2>
+    <p class="section-lead white fade-in">ご相談は無料にて承っております。<br>機密情報は厳格に管理し、外部に漏洩することは一切ございません。</p>
+    <div class="cta-btns fade-in" style="margin-top:40px;">
       <div class="cta-tel-block">
         <a href="tel:0368247739">☎ 03-6824-7739</a>
         <span>お電話でのお問い合わせはこちらから</span>
@@ -208,6 +208,15 @@
   });
   var mbb=document.querySelector(".mobile-bottom-banner");
   if(mbb){window.addEventListener("scroll",function(){mbb.classList.toggle("visible",window.scrollY>200);});}
+
+  // Scroll fade-in
+  var fadeEls=document.querySelectorAll(".fade-in");
+  if(fadeEls.length){
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("visible");obs.unobserve(e.target);}});
+    },{threshold:0.15});
+    fadeEls.forEach(function(el){obs.observe(el);});
+  }
 </script>
 </body>
 </html>
