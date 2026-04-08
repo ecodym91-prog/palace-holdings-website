@@ -235,7 +235,7 @@ nav ul li a:hover { color: var(--gold); }
 }
 .hero-content {}
 .hero-title {
-  font-size: 52px;
+  font-size: clamp(36px, 3.6vw, 52px);
   font-weight: 700;
   color: var(--white);
   line-height: 1.4;
