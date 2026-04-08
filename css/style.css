@@ -731,8 +731,8 @@ a.contact-info-value:hover { color: var(--gold); }
 
 /* ===== SERVICE DETAIL ===== */
 .service-intro { background: var(--gray-light); padding: 60px; }
-.service-intro-inner { max-width: 1200px; margin: 0 auto; }
-.service-intro p { font-size: 18px; color: #555; line-height: 2; max-width: 800px; }
+.service-intro-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+.service-intro p { font-size: 18px; color: #555; line-height: 2; max-width: 800px; margin: 0 auto; text-align: left; }
 .service-list { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; background: #eee; }
 .service-item { background: var(--white); padding: 40px 32px; }
 .service-item-num { font-family: var(--font-en); font-size: 36px; color: var(--gold); opacity: 0.4; line-height: 1; margin-bottom: 12px; }
@@ -882,9 +882,11 @@ a.contact-info-value:hover { color: var(--gold); }
   .service-list { grid-template-columns: 1fr; gap: 0; }
   .service-item { padding: 32px 24px; }
   .flow-section { padding: 60px 24px; }
-  .flow-steps { min-width: 0; flex-wrap: wrap; gap: 0; }
-  .flow-step { flex: none; width: 50%; border: 1px solid rgba(255,255,255,0.1); }
-  .flow-step:not(:last-child)::after { display: none; }
+  .flow-steps { min-width: 0; flex-direction: column; gap: 0; }
+  .flow-step { flex: none; width: 100%; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 16px; padding: 16px 20px; text-align: left; }
+  .flow-step:not(:last-child)::after { content: ''; display: none; }
+  .flow-step .flow-step-num { margin-bottom: 0; flex-shrink: 0; }
+  .flow-step .flow-step-name { margin-bottom: 0; }
   .flow-overview { overflow-x: visible; padding: 32px 0; }
   .flow-overview-inner { padding: 0 20px; }
   .flow-detail-list { grid-template-columns: 1fr; }
