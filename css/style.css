@@ -722,9 +722,9 @@ a.contact-info-value:hover { color: var(--gold); }
 .advisor-catch-sub { font-size: 15px; font-weight: 400; color: var(--navy); line-height: 1.8; margin-top: 0; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 2px solid var(--gold); letter-spacing: 0.02em; white-space: nowrap; }
 .advisor-profile { display: grid; grid-template-columns: 200px 1fr; gap: 48px; margin-bottom: 60px; }
 .advisor-photo { width: 200px; height: 240px; flex-shrink: 0; }
-.advisor-title { font-size: 15px; color: var(--navy); letter-spacing: 0.1em; margin-bottom: 8px; }
+.advisor-title { font-size: 15px; color: var(--navy); font-weight: 700; letter-spacing: 0.1em; margin-bottom: 8px; }
 .advisor-name { font-size: 36px; font-weight: 700; color: var(--navy); margin-bottom: 4px; letter-spacing: 0.05em; }
-.advisor-name-en { font-family: var(--font-en); font-size: 18px; color: var(--navy); letter-spacing: 0.15em; margin-bottom: 24px; }
+.advisor-name-en { font-family: var(--font-en); font-size: 18px; color: var(--navy); font-weight: 700; letter-spacing: 0.15em; margin-bottom: 24px; }
 .advisor-message { font-size: 18px; color: #444; line-height: 2.1; }
 .advisor-message p { margin-bottom: 1.5em; }
 .advisor-career { background: var(--gray-light); padding: 48px; }
