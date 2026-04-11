@@ -908,7 +908,7 @@ a.contact-info-value:hover { color: var(--gold); }
   }
 
   /* Hero */
-  .hero { padding-top: 72px; }
+  .hero { padding-top: 72px; background-position: center bottom; }
   .hero-inner { padding: 48px 24px; }
   .hero-title { font-size: 28px; }
   .hero-desc { font-size: 15px; }
