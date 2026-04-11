@@ -247,7 +247,7 @@ nav ul li a:hover { color: var(--gold); }
   position: relative;
   z-index: 1;
 }
-.hero-content { max-width: 900px; }
+.hero-content { }
 .hero-title {
   font-size: clamp(36px, 4vw, 52px);
   font-weight: 700;
