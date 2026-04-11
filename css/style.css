@@ -226,7 +226,7 @@ nav ul li a:hover { color: var(--gold); }
 /* ===== HERO ===== */
 .hero {
   min-height: 100vh;
-  background: url('../assets/images/top-handshake.jpg') center center / cover no-repeat;
+  background: url('../assets/images/top-handshake.jpg') center bottom / cover no-repeat;
   display: flex;
   align-items: center;
   position: relative;
