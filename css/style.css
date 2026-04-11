@@ -941,6 +941,7 @@ a.contact-info-value:hover { color: var(--gold); }
   .advisor-career { padding: 32px 24px; }
   .advisor-results { grid-template-columns: 1fr; }
   .fee-section { padding: 60px 24px; }
+  .fee-hero-box h2 { font-size: 24px; }
   .fee-free-items { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .fee-reward-table { padding: 20px 16px; }
   .fee-reward-table table td { font-size: 15px; }
