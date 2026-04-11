@@ -26,6 +26,7 @@
   --text: #333;
   --font-ja: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
   --font-en: 'Cormorant Garamond', 'Georgia', serif;
+  --font-num: 'Arial', 'Helvetica Neue', sans-serif;
 }
 
 html { scroll-behavior: smooth; }
@@ -248,7 +249,7 @@ nav ul li a:hover { color: var(--gold); }
 }
 .hero-content { max-width: 900px; }
 .hero-title {
-  font-size: clamp(36px, 3.6vw, 52px);
+  font-size: clamp(36px, 4vw, 52px);
   font-weight: 700;
   color: var(--white);
   line-height: 1.4;
@@ -308,7 +309,7 @@ nav ul li a:hover { color: var(--gold); }
   transform: translate(30%, 30%);
 }
 .service-card-num {
-  font-family: var(--font-en);
+  font-family: var(--font-num);
   font-size: 48px;
   color: var(--gold);
   font-weight: 700;
@@ -356,7 +357,7 @@ nav ul li a:hover { color: var(--gold); }
 .strengths-lead-sub { font-size: 18px; color: var(--text); line-height: 2; margin-bottom: 60px; }
 .strength-item { margin-bottom: 60px; padding-bottom: 60px; border-bottom: 1px solid #ddd; }
 .strength-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 60px; }
-.strength-num { font-family: var(--font-en); font-size: 48px; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 12px; }
+.strength-num { font-family: var(--font-num); font-size: 48px; font-weight: 700; color: var(--gold); line-height: 1; margin-bottom: 12px; }
 .strength-num-label { font-size: 18px; letter-spacing: 0.15em; text-transform: uppercase; margin-right: 8px; vertical-align: baseline; }
 .strength-title { font-size: 26px; font-weight: 700; color: var(--navy); margin-bottom: 24px; line-height: 1.5; border-left: 4px solid var(--gold); padding-left: 16px; }
 .strength-body p { font-size: 18px; color: #555; line-height: 2; margin-bottom: 16px; }
@@ -380,7 +381,7 @@ nav ul li a:hover { color: var(--gold); }
 }
 .strengths-box-item:last-of-type { border-bottom: none; }
 .strengths-box-num {
-  font-family: var(--font-en);
+  font-family: var(--font-num);
   font-size: 34px;
   font-weight: 700;
   color: var(--gold);
@@ -402,7 +403,7 @@ nav ul li a:hover { color: var(--gold); }
 }
 .strength-item:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
 .strength-num {
-  font-family: var(--font-en);
+  font-family: var(--font-num);
   font-size: 42px;
   color: var(--gold);
   font-weight: 700;
@@ -721,9 +722,9 @@ a.contact-info-value:hover { color: var(--gold); }
 .advisor-catch-sub { font-size: 15px; font-weight: 400; color: var(--navy); line-height: 1.8; margin-top: 0; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 2px solid var(--gold); letter-spacing: 0.02em; white-space: nowrap; }
 .advisor-profile { display: grid; grid-template-columns: 200px 1fr; gap: 48px; margin-bottom: 60px; }
 .advisor-photo { width: 200px; height: 240px; flex-shrink: 0; }
-.advisor-title { font-size: 15px; color: #888; letter-spacing: 0.1em; margin-bottom: 8px; }
+.advisor-title { font-size: 15px; color: var(--navy); letter-spacing: 0.1em; margin-bottom: 8px; }
 .advisor-name { font-size: 36px; font-weight: 700; color: var(--navy); margin-bottom: 4px; letter-spacing: 0.05em; }
-.advisor-name-en { font-family: var(--font-en); font-size: 18px; color: #aaa; letter-spacing: 0.15em; margin-bottom: 24px; }
+.advisor-name-en { font-family: var(--font-en); font-size: 18px; color: var(--navy); letter-spacing: 0.15em; margin-bottom: 24px; }
 .advisor-message { font-size: 18px; color: #444; line-height: 2.1; }
 .advisor-message p { margin-bottom: 1.5em; }
 .advisor-career { background: var(--gray-light); padding: 48px; }
@@ -773,7 +774,7 @@ a.contact-info-value:hover { color: var(--gold); }
 .service-intro p { font-size: 18px; color: #555; line-height: 2; max-width: 800px; margin: 0 auto; text-align: left; }
 .service-list { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; background: #eee; }
 .service-item { background: var(--white); padding: 40px 32px; }
-.service-item-num { font-family: var(--font-en); font-size: 36px; color: var(--gold); opacity: 0.4; line-height: 1; margin-bottom: 12px; }
+.service-item-num { font-family: var(--font-num); font-size: 36px; color: var(--gold); opacity: 0.4; line-height: 1; margin-bottom: 12px; }
 .service-item-title { font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 12px; line-height: 1.4; }
 .service-item-desc { font-size: 17px; color: #555; line-height: 1.9; margin-bottom: 20px; }
 .service-item-points { padding: 0; }
@@ -789,7 +790,7 @@ a.contact-info-value:hover { color: var(--gold); }
 .flow-detail-list { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
 .flow-detail-item { border: 1px solid #eee; border-top: 3px solid var(--navy); padding: 24px; }
 .flow-detail-item:nth-child(even) { border-top-color: var(--gold); }
-.flow-detail-num { font-family: var(--font-en); font-size: 32px; color: var(--gold); font-weight: 700; margin-bottom: 8px; line-height: 1; }
+.flow-detail-num { font-family: var(--font-num); font-size: 32px; color: var(--gold); font-weight: 700; margin-bottom: 8px; line-height: 1; }
 .flow-detail-title { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
 .flow-detail-desc { font-size: 16px; color: #666; line-height: 1.8; }
 
@@ -828,7 +829,7 @@ a.contact-info-value:hover { color: var(--gold); }
   background: var(--navy);
   padding: 2px 0;
 }
-.flow-step-num { font-family: 'Cormorant Garamond',serif; font-size: 24px; color: var(--gold); font-weight: 700; line-height: 1; margin-bottom: 8px; }
+.flow-step-num { font-family: var(--font-num); font-size: 24px; color: var(--gold); font-weight: 700; line-height: 1; margin-bottom: 8px; }
 .flow-step-name { font-size: 11px; color: var(--white); font-weight: 700; line-height: 1.4; margin-bottom: 6px; white-space: nowrap; }
 .flow-step-sub { font-size: 10px; color: var(--white); line-height: 1.5; white-space: nowrap; }
 
