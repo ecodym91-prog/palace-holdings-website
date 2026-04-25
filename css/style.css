@@ -7,6 +7,47 @@
   .sp-only { display: inline; }
 }
 
+/* ===== HOVER ZOOM IMAGE ===== */
+.zoom-img {
+  overflow: hidden;
+  display: block;
+}
+.zoom-img img {
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  display: block;
+  width: 100%;
+}
+.zoom-img:hover img {
+  transform: scale(1.08);
+}
+
+/* ===== CURSOR FOLLOWER (mix-blend-mode stalker) ===== */
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease, width 0.25s ease, height 0.25s ease;
+  will-change: left, top;
+}
+.cursor-follower.visible { opacity: 1; }
+.cursor-follower.hover-active {
+  width: 72px;
+  height: 72px;
+}
+.cursor-follower img { display: none; }
+@media (max-width: 900px), (pointer: coarse) {
+  .cursor-follower { display: none; }
+}
+
 /* ===== SCROLL FADE-IN ===== */
 .fade-in {
   opacity: 0;
