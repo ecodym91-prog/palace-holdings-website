@@ -997,7 +997,8 @@ a.contact-info-value:hover { color: var(--gold); }
   .footer-logo img { height: 60px !important; width: auto; }
   .footer-nav { flex-wrap: wrap; justify-content: center; }
   .footer-nav-main a { display: block; width: 100%; text-align: center; }
-  .footer-nav-main .footer-nav-inline { display: flex; justify-content: center; gap: 12px; width: 100%; }
+  .footer-nav-main .footer-nav-inline { display: flex; justify-content: center; gap: 16px; width: 100%; }
+  .footer-nav-main .footer-nav-inline a { width: auto; display: inline-block; }
   .footer-nav-sub a { white-space: normal; text-align: center; }
   .footer-copy { font-size: 11px; white-space: nowrap; }
   .contact-layout { grid-template-columns: 1fr; gap: 40px; }
