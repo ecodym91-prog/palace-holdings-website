@@ -1,6 +1,12 @@
 /* ===== RESET & BASE ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* ===== RESPONSIVE HELPERS ===== */
+.sp-only { display: none; }
+@media (max-width: 900px) {
+  .sp-only { display: inline; }
+}
+
 /* ===== SCROLL FADE-IN ===== */
 .fade-in {
   opacity: 0;
@@ -16,8 +22,8 @@
 .fade-in-delay-3 { transition-delay: 0.45s; }
 
 :root {
-  --navy: #1B2A4A;
-  --navy-light: #243660;
+  --navy: #343565;
+  --navy-light: #4A4B7C;
   --gold: #C9A84C;
   --gold-light: #e0c070;
   --white: #FFFFFF;
@@ -119,7 +125,7 @@ header {
   background: var(--white);
   display: flex;
   align-items: center;
-  padding: 0 60px;
+  padding: 0 120px;
   justify-content: space-between;
   box-shadow: 0 2px 20px rgba(0,0,0,0.08);
   min-height: 120px;
@@ -506,10 +512,10 @@ nav ul li a:hover { color: var(--gold); }
 footer {
   background: #111B2E;
   color: rgba(255,255,255,0.7);
-  padding: 48px 60px;
+  padding: 48px 120px;
 }
 .footer-inner {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
