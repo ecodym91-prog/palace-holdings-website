@@ -1052,7 +1052,7 @@ a.contact-info-value:hover { color: var(--gold); }
   .hero-frame-corner.bl { bottom: 16px; left: 16px; }
   .hero-frame-corner.br { bottom: 16px; right: 16px; }
   .hero-title { font-size: 28px; }
-  .hero-desc { font-size: 14px; }
+  .hero-desc { font-size: 13px; }
   .btn-cta-hero { font-size: 16px; padding: 16px 24px; }
 
   /* Sections */
