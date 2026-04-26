@@ -568,7 +568,7 @@ nav ul li a:hover { color: var(--gold); }
 .cta-section {
   background: var(--navy);
   text-align: center;
-  padding: 100px 60px;
+  padding: 60px 60px;
 }
 .cta-section .section-title { color: var(--white); }
 .cta-section .section-lead { color: var(--white); margin: 0 auto 40px; }
