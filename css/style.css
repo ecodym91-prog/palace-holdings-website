@@ -1058,6 +1058,9 @@ a.contact-info-value:hover { color: var(--gold); }
   /* Sections */
   .section { padding: 60px 24px; }
   .section-title { font-size: 24px; }
+  .strengths-box { padding: 28px 20px; }
+  .strengths-box-item { font-size: 14px; padding: 14px 0; }
+  .strengths-box-num { font-size: 22px; margin-right: 10px; }
   .service-grid, .company-grid, .company-grid-top { grid-template-columns: 1fr; }
   .strengths-grid { grid-template-columns: 1fr; }
   .service-list { grid-template-columns: 1fr; gap: 0; }
