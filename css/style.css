@@ -215,7 +215,7 @@ nav ul {
 }
 nav ul li a {
   color: var(--navy);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.05em;
   transition: color 0.2s;
