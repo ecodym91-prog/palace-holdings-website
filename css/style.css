@@ -185,10 +185,10 @@ header {
   background: var(--white);
   display: flex;
   align-items: center;
-  padding: 0 120px;
+  padding: 0 200px;
   justify-content: space-between;
   box-shadow: 0 2px 20px rgba(0,0,0,0.08);
-  min-height: 72px;
+  min-height: 60px;
 }
 .header-logo {
   display: flex;
@@ -196,7 +196,7 @@ header {
   flex-shrink: 0;
 }
 .header-logo img {
-  height: 56px;
+  height: 44px;
   width: auto;
   display: block;
 }
@@ -622,7 +622,7 @@ footer {
   padding: 48px 120px;
 }
 .footer-logo img {
-  height: 56px !important;
+  height: 44px !important;
   width: auto;
   filter: brightness(0) invert(1);
 }
