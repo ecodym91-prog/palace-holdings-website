@@ -1059,7 +1059,7 @@ a.contact-info-value:hover { color: var(--gold); }
   .section { padding: 60px 24px; }
   .section-title { font-size: 24px; }
   .strengths-box { padding: 24px 16px; }
-  .strengths-box-item { font-size: 12px; padding: 14px 0; white-space: nowrap; letter-spacing: 0; }
+  .strengths-box-item { font-size: 11px; padding: 14px 0; white-space: nowrap; letter-spacing: 0; }
   .strengths-box-num { font-size: 18px; margin-right: 8px; }
   .service-grid, .company-grid, .company-grid-top { grid-template-columns: 1fr; }
   .strengths-grid { grid-template-columns: 1fr; }
