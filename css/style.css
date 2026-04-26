@@ -21,27 +21,27 @@
   transform: scale(1.08);
 }
 
-/* ===== CURSOR FOLLOWER (mix-blend-mode stalker) ===== */
+/* ===== CURSOR FOLLOWER (subtle dot) ===== */
 .cursor-follower {
   position: fixed;
   top: 0;
   left: 0;
-  width: 32px;
-  height: 32px;
-  background: #fff;
+  width: 14px;
+  height: 14px;
+  background: rgba(201, 168, 76, 0.55);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
-  mix-blend-mode: difference;
   opacity: 0;
   transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease, width 0.25s ease, height 0.25s ease;
+  transition: opacity 0.3s ease, width 0.25s ease, height 0.25s ease, background 0.25s ease;
   will-change: left, top;
 }
 .cursor-follower.visible { opacity: 1; }
 .cursor-follower.hover-active {
-  width: 72px;
-  height: 72px;
+  width: 28px;
+  height: 28px;
+  background: rgba(201, 168, 76, 0.35);
 }
 .cursor-follower img { display: none; }
 @media (max-width: 900px), (pointer: coarse) {
