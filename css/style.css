@@ -3,8 +3,10 @@
 
 /* ===== RESPONSIVE HELPERS ===== */
 .sp-only { display: none; }
+.pc-only { display: inline; }
 @media (max-width: 900px) {
   .sp-only { display: inline; }
+  .pc-only { display: none; }
 }
 
 /* ===== HOVER ZOOM IMAGE ===== */
